@@ -1,0 +1,155 @@
+<!--
+todoAppWebpage
+html has <tags> and a closing </tag>
+set of tags = element
+html element, head element, body element
+html element = everything inside is html
+head element = stuff not displayed
+body element = stuff that will be visually displayed on the webpage
+DOM = document object model..browser's interpretation of the HTML is the DOM
+you can see the DOM by right click -> inspect on the browser
+HTML runs code in order...so load the script at the end to see buttons
+
+//////////////////////////////////////////////////////////
+// V7
+//////////////////////////////////////////////////////////
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<h1>Todo List</h1>
+
+		<!-- create unique button....id = attribute  -->
+		<button id="displayTodosButton">Display Todos</button>
+		<button id ="toggleAllButton">Toggle All</button>
+		<script src="todoApp.js"></script>
+	</body>
+
+</html>
+
+<!--
+//////////////////////////////////////////////////////////
+// V8
+//////////////////////////////////////////////////////////
+-->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<h1>Todo List</h1>
+
+		<!-- add div to seperate buttons -->
+		<div>
+			<!-- refactored for onclick -->
+			<button onclick="handlers.displayTodos()">Display Todos</button>
+			<button onclick="handlers.toggleAll()">Toggle All</button>
+		<div>
+
+		<div>
+			<button onclick="handlers.addTodo()">Add Todo</button>
+			<input id="addTodoInputText" type="text">
+		<div>
+
+		<!-- add add input buttons -->
+		<div>
+			<button onclick="handlers.changeTodo()">Change Todo</button>
+			<input id="changeTodoInputPosition" type="number">
+			<input id="changeTodoInputText" type="text">
+		<div>
+
+		<div>
+			<button onclick="handlers.deleteTodo()">Delete Todo</button>
+			<input id="deleteTodoInputPosition" type="number">
+		<div>
+
+		<div>
+			<button onclick="handlers.toggleComplete()">Toggle Complete</button>
+			<input id="toggleCompleteInputPosition" type="number">
+		<div>
+
+		<script src="todoApp.js"></script>
+	</body>
+
+</html>
+
+<!--
+//////////////////////////////////////////////////////////
+// V9
+//////////////////////////////////////////////////////////
+-->
+
+<!--
+li elements = two types
+
+
+CREATED AN UNORDERED LIST (BULLETS)
+<ul>
+	<li><li>
+</ul>
+
+
+CREATES AN ORDERED LIST (NUMBERED)
+<ol>
+	<li><li>
+</ol>
+-->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<h1>Todo List</h1>
+
+		<!-- add div to seperate buttons -->
+		<div>
+			<!-- refactored for onclick -->
+			<button onclick="handlers.displayTodos()">Display Todos</button>
+			<button onclick="handlers.toggleAll()">Toggle All</button>
+		<div>
+
+		<div>
+			<button onclick="handlers.addTodo()">Add Todo</button>
+			<input id="addTodoInputText" type="text">
+		<div>
+
+		<!-- add add input buttons -->
+		<div>
+			<button onclick="handlers.changeTodo()">Change Todo</button>
+			<input id="changeTodoInputPosition" type="number">
+			<input id="changeTodoInputText" type="text">
+		<div>
+
+		<div>
+			<button onclick="handlers.deleteTodo()">Delete Todo</button>
+			<input id="deleteTodoInputPosition" type="number">
+		<div>
+
+		<div>
+			<button onclick="handlers.toggleComplete()">Toggle Complete</button>
+			<input id="toggleCompleteInputPosition" type="number">
+		<div>
+
+		<!-- insert LI here -->
+		<ul>
+		</ul>
+
+		<script src="todoApp.js"></script>
+	</body>
+
+</html>
